@@ -12,37 +12,91 @@
     <div class="container">
         <h1 class="encabezado">Este es el titulo</h1>
         <div class="row">
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
                 <p id="demo1">Javascript can change HTML content</p>
                 <button class="btn btn-info btn-sm" type="button" onclick="changeText()">Click me!</button>
             </div>
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
                 <p>JavaScript can change HTML attribute values.</p>
                 <p>In this case JavaScript changes the value of the src (source) atribute of an image.</p>
                 <button class="btn btn-outline-success my-2 btn-sm" type="button" onclick="luzOn()">Turn on the ligth</button>
                 <img id="myImage" src="../imagenes/pic_bulboff.gif" alt="Bombilla" style="width:100px" class="m-auto">
                 <button class="btn btn-outline-danger my-2 btn-sm" type="button" onclick="luzOff()">Turn off the ligth</button>
             </div>
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
                 <p id="demo2">JavaScript can change the styles of an HTML element.</p>
                 <button class="btn btn-outline-dark btn-sm" type="button" onclick="sizeText()">Click me!</button>
             </div>
-            <div class="col-lg-3 col-md-4">
-                <h2 id="demo3" class="badge bg-danger text-wrap fs-3 fst-italic">JavaScript can hide HTML elements</h2>
-                <button class="btn btn-outline-primary btn-sm" type="button" onclick="hideText()">Click me!</button>
+            <hr class="bg-primary m-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
+                <h2 id="demo3" class="badge bg-danger text-wrap fs-3 fst-italic mt-3">JavaScript can hide HTML elements</h2>
+                <button class="btn btn-outline-primary btn-sm m-5" type="button" onclick="hideText()">Click me!</button>
             </div>
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
+                <h3 class="text-success fst-italic fw-light">String Methods</h3>
+                <p>Métodos <span class="fw-bold fst-italic text-danger">slice(start, end)</span>, <span class="fw-bold fst-italic text-danger">substring(start, end)</span> y <span class="fw-bold fst-italic text-danger">substr(start, length)</span>.</p>
+                <p class="">El método <span class="fst-italic fw-bold">"slice"</span> extrae un parte de un string, se le pasan dos parámetros desde donde queremos empezar y hasta donde queremos extrar la porción de string. El método <span class="fst-italic fw-bold">"substring"</span> tiene la misma la función solo que este no acepta núimeros negativos como parámetros. Y el método <span class="fst-italic fw-bold">"substr"</span> en los parámetros le indicamos desde donde queremos empezar y el segundo parámetro la longitud de string que queremos quitar.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 border border-warning">
+                <h3 class="text-center text-success">"Slice()"</h3>
+                <p>The slice() method extract a part of a string and returns the extracted parts in a new string:</p>
+                <p id="demo4"></p>
+                <button class="btn btn-outline-primary btn-sm" type="button" onclick="methodSlice()">Click Slice!</button>
+                <hr class="bg-black">
+                <h3 class="text-center text-success">"Substring()"</h3>
+                <p>The Substring() method extract a part of a string and retunrs the extracted parts in a new string:</p>
+                <p id="demo5"></p>
+                <button class="btn btn-outline-dark btn-sm" type="button" onclick="methodSubstring()">Click Substring!</button>
+                <hr class="bg-black">
+                <h3 class="text-center text-success">"Substr()"</h3>
+                <p>The substr() method extract a part of a string and returns the extracted parts in a new string</p>
+                <p id="demo6"></p>
+                <button class="btn btn-outline-light" type="button" onclick="methodSubstr()">Clink Substr!</button>
+            </div>
+            <hr class="bg-primary m-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
+                <h3 class="text-center text-success">"Replace()"</h3>
+                <p>We can replace "Juan" with "Esteban" in the paragraph below:</p>
+                <p id="demo7">Hello my name is Juan!</p>
+                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="methodReplace()">Cambia texto</button>
+            </div>
+            <div class="col-lg-3 col-md-4 border border-warning">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
             </div>
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
             </div>
-            <div class="col-lg-3 col-md-4">
+            <hr class="bg-primary m-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
             </div>
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
             </div>
+            <div class="col-lg-3 col-md-4 border border-warning">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
+            </div>
+            <hr class="bg-primary m-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
+            </div>
+            <div class="col-lg-3 col-md-4 border border-warning ">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
+            </div>
+            <div class="col-lg-3 col-md-4 border border-warning">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
+            </div>
+            <hr class="bg-primary m-4">
+            <div class="col-lg-3 col-md-4 border border-warning">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
+            </div>
+            <div class="col-lg-3 col-md-4 border border-warning">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
+            </div>
+            <div class="col-lg-3 col-md-4 border border-warning">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti cum, saepe quisquam suscipit beatae natus dignissimos possimus facilis. Explicabo aperiam maxime illo repellat voluptatibus corporis dicta soluta numquam voluptate?</p>
+            </div>
+            <hr class="bg-primary m-4">
         </div>
     </div>
     

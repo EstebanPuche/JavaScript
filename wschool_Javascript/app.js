@@ -5,7 +5,7 @@ function changeText(){
 //******************************************************************************/
 function luzOn(){
     document.getElementById('myImage').src = "../imagenes/pic_bulbon.gif";
-    // Cuando puedas revis por que esto tan sencillo no te sale...
+    // Cuando puedas revisa por que esto tan sencillo no te sale...
     /*var encender = false;
     if (encender){
         document.getElementById('myImage').src = "../imagenes/pic_bulbon.gif";
@@ -25,4 +25,24 @@ function sizeText(){
 /********************************************************************************/
 function hideText(){
     document.getElementById('demo3').style.display = "none";
+}
+/*********************************************************************************/
+function methodSlice(){
+    let string = "Apple, Banana, Kiwi";
+    document.getElementById('demo4').innerHTML = string.slice(7, 13);// string.slice(-12, -6);
+}
+
+function methodSubstring(){
+    let string = "Apple, Banana, Kiwi";
+    document.getElementById('demo5').innerHTML = string.substring(5, 15);
+}
+
+function methodSubstr(){
+    let string = "Apple, Banana, Kiwi";
+    document.getElementById('demo6').innerHTML = string.substr(7, 12);
+}
+
+function methodReplace(){
+    let texto = document.getElementById('demo7').innerHTML;
+    document.getElementById('demo7').innerHTML = texto.replace("Juan", "Esteban");
 }

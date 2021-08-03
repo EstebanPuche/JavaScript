@@ -46,3 +46,20 @@ function methodReplace(){
     let texto = document.getElementById('demo7').innerHTML;
     document.getElementById('demo7').innerHTML = texto.replace("Juan", "Esteban");
 }
+
+function methodCahrtAt(){
+    let texto = "Hola Esteban";
+    //! Las dos maneras vaeln por igual para sacar el caracter deseado...
+    document.getElementById('demo8').innerHTML = texto.charAt(5);
+    //document.getElementById('demo8').innerHTML = texto[5];
+}
+
+function methodSplit(){
+    let texto = "Soy Esteban";
+    const arrayTexto = texto.split("");
+    texto = "";
+    for(let i = 0; i < arrayTexto.length; i++){
+        texto += arrayTexto[i] + "<br>";
+    }
+    document.getElementById('demo9').innerHTML = texto;
+}
